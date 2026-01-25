@@ -1,29 +1,33 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oksana Poladych | Superyacht Stewardess</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Oksana Poladych | Yacht Stewardess</title>
 
-    <!--(FAVICON) -->
-    <link rel="icon" type="image/ico" href="./img/favicon.ico">
-    
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-    
-    <!-- AOS Animations -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    
-    <!-- Swiper CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <!--(FAVICON) -->
+        <link rel="icon" type="image/ico" href="./img/favicon.ico">
 
-    <style>
+        <!-- Tailwind CSS -->
+        <script src="https://cdn.tailwindcss.com"></script>
+
+        <!-- Google Fonts -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+            rel="stylesheet">
+
+        <!-- AOS Animations -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+        <!-- Swiper CSS -->
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+        <style>
         :root {
             --yacht-navy: #060d17;
             --yacht-card: #0f1a2a;
@@ -233,452 +237,626 @@
             .swiper-button-next, .swiper-button-prev { width: 44px; height: 44px; }
         }
     </style>
-</head>
-<body class="overflow-x-hidden">
+    </head>
+    <body class="overflow-x-hidden">
 
-    <!-- NAVIGATION -->
-    <nav id="navbar" class="fixed top-0 w-full z-50 text-white py-4 md:py-6">
-        <div class="max-w-7xl mx-auto px-4 md:px-6 flex justify-between items-center">
-            <div class="flex items-center space-x-3">
-                <!-- LOGO OP SQUARE -->
-                <div class="logo-square">
-                    <span class="text-white">O</span><span class="text-gold">P</span>
+        <!-- NAVIGATION -->
+        <nav id="navbar"
+            class="fixed top-0 w-full z-50 text-white py-4 md:py-6">
+            <div
+                class="max-w-7xl mx-auto px-4 md:px-6 flex justify-between items-center">
+                <div class="flex items-center space-x-3">
+                    <!-- LOGO OP SQUARE -->
+                    <div class="logo-square">
+                        <span class="text-white">O</span><span
+                            class="text-gold">P</span>
+                    </div>
+                    <div
+                        class="text-xs sm:text-base md:text-lg font-bold tracking-tighter serif uppercase">
+                        Oksana <span class="text-gold">Poladych</span>
+                    </div>
                 </div>
-                <div class="text-xs sm:text-base md:text-lg font-bold tracking-tighter serif uppercase">
-                    Oksana <span class="text-gold">Poladych</span>
-                </div>
-            </div>
-            
-            <div class="flex items-center space-x-4 md:space-x-6">
-                <div class="hidden lg:flex space-x-8 text-[10px] font-bold uppercase tracking-[0.2em]">
-                    <a href="#about" data-i18n="nav-about" class="hover:text-gold transition">About</a>
-                    <a href="#services" data-i18n="nav-services" class="hover:text-gold transition">Expertise</a>
-                    <a href="#experience" data-i18n="nav-exp" class="hover:text-gold transition">Timeline</a>
-                    <a href="#gallery" data-i18n="nav-gallery" class="hover:text-gold transition">Gallery</a>
-                </div>
-                <div class="flex bg-white/5 p-1 rounded-md">
-                    <button onclick="setLanguage('en')" id="btn-en" class="lang-btn active">EN</button>
-                    <button onclick="setLanguage('ua')" id="btn-ua" class="lang-btn ml-1">UA</button>
-                </div>
-            </div>
-        </div>
-    </nav>
 
-    <!-- HERO SECTION -->
-    <section class="relative h-screen flex items-center justify-center text-center px-4 overflow-hidden">
-        <div class="hero-bg-container">
-            <!-- ФОТО ФОНА 1: Вставьте путь к вашему фону яхты здесь (например ./images/bg_yacht.jpg) -->
-            <div class="hero-bg-image active" style="background-image: url('./img/img_1.jpg');" onerror="this.style.backgroundImage='url(\'https://images.unsplash.com/photo-1569263979104-865ab7cd8d13?auto=format&fit=crop&q=80\')'"></div>
-            <!-- ФОТО ФОНА 2: Вставьте путь к вашему фону лайнера здесь (например ./images/bg_liner.jpg) -->
-            <div class="hero-bg-image" style="background-image: url('./img/img_2.jpg');" onerror="this.style.backgroundImage='url(\'https://images.unsplash.com/photo-1548574505-5e239809ee19?auto=format&fit=crop&q=80\')'"></div>
-        </div>
-        <div class="absolute inset-0 bg-gradient-to-b from-black/80 via-black/30 to-[#060d17] z-[1]"></div>
-        
-        <div class="relative z-10 w-full max-w-5xl mx-auto" data-aos="fade-up">
-            <p data-i18n="hero-tag" class="uppercase tracking-[0.3em] md:tracking-[0.6em] text-[8px] md:text-[10px] mb-4 md:mb-6 font-medium text-gold px-4">Elite Yacht & Cruise Hospitality</p>
-            <h1 class="serif text-4xl sm:text-6xl md:text-8xl lg:text-9xl mb-6 md:mb-8 leading-tight tracking-tighter text-white uppercase px-4">Oksana <br> Poladych</h1>
-            <div class="w-16 md:w-24 h-px bg-gold mx-auto mb-8 md:mb-10"></div>
-            <p data-i18n="hero-role" class="text-slate-200 font-light text-xs md:text-lg tracking-widest max-w-2xl mx-auto uppercase px-6">Professional Stewardess | Guest Excellence Specialist</p>
-        </div>
-        <div class="absolute bottom-10 animate-bounce text-gold opacity-60 z-10">
-            <i class="fa-solid fa-chevron-down text-xl md:text-2xl"></i>
-        </div>
-    </section>
-
-    <!-- ABOUT & PERSONAL INFO -->
-    <section id="about" class="py-16 md:py-32 px-4 md:px-6 max-w-7xl mx-auto overflow-hidden">
-        <div class="grid lg:grid-cols-2 gap-12 md:gap-20 items-center justify-items-center">
-            
-            <!-- СЛАЙДЕР С ВАШИМИ ФОТО (Центрирован) -->
-            <div class="relative w-full flex justify-center lg:justify-center" data-aos="fade-right">
-                <div class="w-full max-w-[90vw] sm:max-w-md mx-auto">
-                    <div class="swiper personalSwiper rounded-2xl overflow-hidden shadow-2xl border-[8px] md:border-[12px] border-[#0f1a2a]">
-                        <div class="swiper-wrapper">
-                            <!-- ВАШИ ПЕРСОНАЛЬНЫЕ ФОТО: Замените пути ниже на свои из папки images -->
-                            <div class="swiper-slide">
-                                <img src="./img/photo_1.jpg" alt="Oksana 1" class="w-full aspect-[4/5] object-cover" onerror="this.src='https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?auto=format&fit=crop&q=80'">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="./img/photo_2.jpg" alt="Oksana 2" class="w-full aspect-[4/5] object-cover" onerror="this.src='https://images.unsplash.com/photo-1567532939604-b6b5b0db2604?auto=format&fit=crop&q=80'">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="./img/photo_3.jpg" alt="Oksana 3" class="w-full aspect-[4/5] object-cover" onerror="this.src='https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&q=80'">
-                            </div>
-                        </div>
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-pagination"></div>
+                <div class="flex items-center space-x-4 md:space-x-6">
+                    <div
+                        class="hidden lg:flex space-x-8 text-[10px] font-bold uppercase tracking-[0.2em]">
+                        <a href="#about" data-i18n="nav-about"
+                            class="hover:text-gold transition">About</a>
+                        <a href="#services" data-i18n="nav-services"
+                            class="hover:text-gold transition">Expertise</a>
+                        <a href="#experience" data-i18n="nav-exp"
+                            class="hover:text-gold transition">Timeline</a>
+                        <a href="#gallery" data-i18n="nav-gallery"
+                            class="hover:text-gold transition">Gallery</a>
+                    </div>
+                    <div class="flex bg-white/5 p-1 rounded-md">
+                        <button onclick="setLanguage('en')" id="btn-en"
+                            class="lang-btn active">EN</button>
+                        <button onclick="setLanguage('ua')" id="btn-ua"
+                            class="lang-btn ml-1">UA</button>
                     </div>
                 </div>
             </div>
+        </nav>
 
-            <!-- Content Section - Centered on Mobile -->
-            <div data-aos="fade-left" class="text-center lg:text-left w-full max-w-2xl mx-auto lg:mx-0">
-                <h3 class="text-gold font-bold uppercase tracking-widest text-[10px] md:text-xs mb-4" data-i18n="about-tag">Profile</h3>
-                <h2 class="serif text-3xl md:text-6xl mb-6 md:mb-8 text-white" data-i18n="about-title">About Me</h2>
-                <p class="text-slate-400 mb-8 md:mb-10 text-base md:text-lg font-light leading-relaxed" data-i18n="about-text">
-                    Dedicated Stewardess with a proven track record on luxury cruise lines and private superyachts. I focus on creating a seamless guest experience through impeccable interior care and high-end hospitality.
+        <!-- HERO SECTION -->
+        <section
+            class="relative h-screen flex items-center justify-center text-center px-4 overflow-hidden">
+            <div class="hero-bg-container">
+                <div class="hero-bg-image active"
+                    style="background-image: url('./img/img_1.jpg');"
+                    onerror="this.style.backgroundImage='url(\'https://images.unsplash.com/photo-1569263979104-865ab7cd8d13?auto=format&fit=crop&q=80\')'"></div>
+                <div class="hero-bg-image"
+                    style="background-image: url('./img/img_2.jpg');"
+                    onerror="this.style.backgroundImage='url(\'https://images.unsplash.com/photo-1548574505-5e239809ee19?auto=format&fit=crop&q=80\')'"></div>
+            </div>
+            <div
+                class="absolute inset-0 bg-gradient-to-b from-black/80 via-black/30 to-[#060d17] z-[1]"></div>
+
+            <div class="relative z-10 w-full max-w-5xl mx-auto"
+                data-aos="fade-up">
+                <p data-i18n="hero-tag"
+                    class="uppercase tracking-[0.3em] md:tracking-[0.6em] text-[8px] md:text-[10px] mb-4 md:mb-6 font-medium text-gold px-4">Yacht
+                    & Cruise Hospitality</p>
+                <h1
+                    class="serif text-4xl sm:text-6xl md:text-8xl lg:text-9xl mb-6 md:mb-8 leading-tight tracking-tighter text-white uppercase px-4">Oksana
+                    <br> Poladych</h1>
+                <div
+                    class="w-16 md:w-24 h-px bg-gold mx-auto mb-8 md:mb-10"></div>
+                <p data-i18n="hero-role"
+                    class="text-slate-200 font-light text-xs md:text-lg tracking-widest max-w-2xl mx-auto uppercase px-6">Professional
+                    Stewardess | Hospitality Specialist</p>
+            </div>
+            <div
+                class="absolute bottom-10 animate-bounce text-gold opacity-60 z-10">
+                <i class="fa-solid fa-chevron-down text-xl md:text-2xl"></i>
+            </div>
+        </section>
+
+        <!-- ABOUT & PERSONAL INFO -->
+        <section id="about"
+            class="py-16 md:py-32 px-4 md:px-6 max-w-7xl mx-auto overflow-hidden">
+            <div
+                class="grid lg:grid-cols-2 gap-12 md:gap-20 items-center justify-items-center">
+
+                <!-- СЛАЙДЕР С ВАШИМИ ФОТО -->
+                <div
+                    class="relative w-full flex justify-center lg:justify-center"
+                    data-aos="fade-right">
+                    <div class="w-full max-w-[90vw] sm:max-w-md mx-auto">
+                        <div
+                            class="swiper personalSwiper rounded-2xl overflow-hidden shadow-2xl border-[8px] md:border-[12px] border-[#0f1a2a]">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="./img/photo_1.jpg" alt="Oksana 1"
+                                        class="w-full aspect-[4/5] object-cover"
+                                        onerror="this.src='https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?auto=format&fit=crop&q=80'">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./img/photo_2.jpg" alt="Oksana 2"
+                                        class="w-full aspect-[4/5] object-cover"
+                                        onerror="this.src='https://images.unsplash.com/photo-1567532939604-b6b5b0db2604?auto=format&fit=crop&q=80'">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./img/photo_3.jpg" alt="Oksana 3"
+                                        class="w-full aspect-[4/5] object-cover"
+                                        onerror="this.src='https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&q=80'">
+                                </div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Content Section -->
+                <div data-aos="fade-left"
+                    class="text-center lg:text-left w-full max-w-2xl mx-auto lg:mx-0">
+                    <h3
+                        class="text-gold font-bold uppercase tracking-widest text-[10px] md:text-xs mb-4"
+                        data-i18n="about-tag">Profile</h3>
+                    <h2
+                        class="serif text-3xl md:text-6xl mb-6 md:mb-8 text-white"
+                        data-i18n="about-title">About Me</h2>
+                    <p
+                        class="text-slate-400 mb-8 md:mb-10 text-base md:text-lg font-light leading-relaxed"
+                        data-i18n="about-text">
+                        Dedicated Stewardess with a proven track record on
+                        cruise lines and private yachts. I focus on creating a
+                        comfortable guest experience through attentive interior
+                        care and quality hospitality.
+                    </p>
+
+                    <div
+                        class="grid grid-cols-1 sm:grid-cols-2 gap-x-8 md:gap-x-12 gap-y-6 mb-10 md:mb-12 border-t border-white/10 pt-8 text-xs md:text-sm">
+                        <div class="flex flex-col items-center lg:items-start">
+                            <span
+                                class="block text-[8px] md:text-[9px] uppercase text-slate-500 font-bold mb-1"
+                                data-i18n="label-dob">DOB</span>
+                            <span
+                                class="font-semibold text-white">30.06.1985</span>
+                        </div>
+                        <div class="flex flex-col items-center lg:items-start">
+                            <span
+                                class="block text-[8px] md:text-[9px] uppercase text-slate-500 font-bold mb-1"
+                                data-i18n="label-lang">Languages</span>
+                            <span class="font-semibold uppercase text-white">RU,
+                                EN</span>
+                        </div>
+                        <div class="flex flex-col items-center lg:items-start">
+                            <span
+                                class="block text-[8px] md:text-[9px] uppercase text-slate-500 font-bold mb-1"
+                                data-i18n="label-pass">Passport EU</span>
+                            <span
+                                class="font-semibold text-white">F*3****8</span>
+                        </div>
+                        <div class="flex flex-col items-center lg:items-start">
+                            <span
+                                class="block text-[8px] md:text-[9px] uppercase text-slate-500 font-bold mb-1"
+                                data-i18n="label-loc">Location</span>
+                            <span
+                                class="font-semibold text-white uppercase">Odessa,
+                                Ukraine</span>
+                        </div>
+                        <div
+                            class="sm:col-span-2 border-t border-white/5 pt-4 flex flex-col items-center lg:items-start">
+                            <span
+                                class="block text-[8px] md:text-[9px] uppercase text-slate-500 font-bold mb-2">Maritime
+                                Docs</span>
+                            <div
+                                class="flex flex-wrap gap-4 md:gap-8 justify-center lg:justify-start">
+                                <span
+                                    class="text-white text-xs md:text-sm"><strong
+                                        class="text-gold">SB:</strong>
+                                    A*0****0</span>
+                                <span
+                                    class="text-white text-xs md:text-sm"><strong
+                                        class="text-gold">STCW:</strong>
+                                    14****8</span>
+                            </div>
+                        </div>
+                        <div
+                            class="sm:col-span-2 flex flex-col items-center lg:items-start">
+                            <span
+                                class="block text-[8px] md:text-[9px] uppercase text-slate-500 font-bold mb-1"
+                                data-i18n="label-origin">Birth Place</span>
+                            <span
+                                class="text-white text-xs md:text-sm italic">Kalanchak,
+                                Kherson region</span>
+                        </div>
+                    </div>
+
+                    <div
+                        class="flex flex-wrap gap-2 justify-center lg:justify-start">
+                        <span
+                            class="px-4 md:px-5 py-1.5 md:py-2 bg-gold/10 text-gold text-[9px] md:text-[10px] font-bold uppercase rounded-full border border-gold/30 tracking-widest"
+                            data-i18n="tag-smoke">Non-Smoker</span>
+                        <span
+                            class="px-4 md:px-5 py-1.5 md:py-2 bg-gold/10 text-gold text-[9px] md:text-[10px] font-bold uppercase rounded-full border border-gold/30 tracking-widest"
+                            data-i18n="tag-tattoo">No Visible Tattoos</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICES & EXPERTISE -->
+        <section id="services" class="py-16 md:py-24 bg-[#0a1421]">
+            <div class="max-w-7xl mx-auto px-4 md:px-6">
+                <div class="text-center mb-12 md:mb-16" data-aos="fade-up">
+                    <h2 class="serif text-3xl md:text-5xl mb-4 text-white"
+                        data-i18n="ser-title">Expertise & Services</h2>
+                    <div class="h-1 w-12 md:w-16 bg-gold mx-auto"></div>
+                    <p
+                        class="text-[8px] md:text-[10px] uppercase text-gold/60 mt-4 tracking-widest"
+                        data-i18n="hover-hint">Details</p>
+                </div>
+
+                <div
+                    class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-6 justify-items-center">
+                    <!-- Hospitality -->
+                    <div class="service-card" data-aos="zoom-in">
+                        <div class="service-content">
+                            <i
+                                class="fa-solid fa-utensils text-gold text-2xl mb-4"></i>
+                            <h4
+                                class="text-[10px] md:text-[11px] font-bold uppercase text-white tracking-widest"
+                                data-i18n="s-1">Hospitality</h4>
+                        </div>
+                        <div class="service-details">
+                            <ul class="service-list space-y-2">
+                                <li data-i18n="s1-1">• Table Service</li>
+                                <li data-i18n="s1-2">• Table Decoration</li>
+                                <li data-i18n="s1-3">• Guest Care</li>
+                                <li data-i18n="s1-4">• Team Collaboration</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Interior -->
+                    <div class="service-card" data-aos="zoom-in"
+                        data-aos-delay="100">
+                        <div class="service-content">
+                            <i
+                                class="fa-solid fa-bed text-gold text-2xl mb-4"></i>
+                            <h4
+                                class="text-[10px] md:text-[11px] font-bold uppercase text-white tracking-widest"
+                                data-i18n="s-2">Interior</h4>
+                        </div>
+                        <div class="service-details">
+                            <ul class="service-list space-y-2">
+                                <li data-i18n="s2-1">• Housekeeping</li>
+                                <li data-i18n="s2-2">• Laundry Care</li>
+                                <li data-i18n="s2-3">• Detailing</li>
+                                <li data-i18n="s2-4">• Silver Service</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Guest Focus -->
+                    <div class="service-card" data-aos="zoom-in"
+                        data-aos-delay="200">
+                        <div class="service-content">
+                            <i
+                                class="fa-solid fa-eye text-gold text-2xl mb-4"></i>
+                            <h4
+                                class="text-[10px] md:text-[11px] font-bold uppercase text-white tracking-widest"
+                                data-i18n="s-3">Attention</h4>
+                        </div>
+                        <div class="service-details">
+                            <ul class="service-list space-y-2">
+                                <li data-i18n="s3-1">• Anticipate needs</li>
+                                <li data-i18n="s3-2">• Active listening</li>
+                                <li data-i18n="s3-3">• Attentive details</li>
+                                <li data-i18n="s3-4">• Service standards</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Communication -->
+                    <div class="service-card" data-aos="zoom-in"
+                        data-aos-delay="300">
+                        <div class="service-content">
+                            <i
+                                class="fa-solid fa-comments text-gold text-2xl mb-4"></i>
+                            <h4
+                                class="text-[10px] md:text-[11px] font-bold uppercase text-white tracking-widest"
+                                data-i18n="s-4">Comm Skills</h4>
+                        </div>
+                        <div class="service-details">
+                            <ul class="service-list space-y-2">
+                                <li data-i18n="s4-1">• Verbal skills</li>
+                                <li data-i18n="s4-2">• Professionalism</li>
+                                <li data-i18n="s4-3">• Interaction</li>
+                                <li data-i18n="s4-4">• Etiquette</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Attributes -->
+                    <div class="service-card" data-aos="zoom-in"
+                        data-aos-delay="400">
+                        <div class="service-content">
+                            <i
+                                class="fa-solid fa-bolt text-gold text-2xl mb-4"></i>
+                            <h4
+                                class="text-[10px] md:text-[11px] font-bold uppercase text-white tracking-widest"
+                                data-i18n="s-5">Attributes</h4>
+                        </div>
+                        <div class="service-details">
+                            <ul class="service-list space-y-2">
+                                <li data-i18n="s5-1">• Resilient</li>
+                                <li data-i18n="s5-2">• Reliable</li>
+                                <li data-i18n="s5-3">• Efficient</li>
+                                <li data-i18n="s5-4">• Proactive</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Professional -->
+                    <div class="service-card" data-aos="zoom-in"
+                        data-aos-delay="500">
+                        <div class="service-content">
+                            <i
+                                class="fa-solid fa-medal text-gold text-2xl mb-4"></i>
+                            <h4
+                                class="text-[10px] md:text-[11px] font-bold uppercase text-white tracking-widest"
+                                data-i18n="s-6">Standards</h4>
+                        </div>
+                        <div class="service-details">
+                            <ul class="service-list space-y-2">
+                                <li data-i18n="s6-1">• Work Ethic</li>
+                                <li data-i18n="s6-2">• Discretion</li>
+                                <li data-i18n="s6-3">• Standards</li>
+                                <li data-i18n="s6-4">• Integrity</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TIMELINE -->
+        <section id="experience"
+            class="py-16 md:py-32 px-4 md:px-6 max-w-7xl mx-auto">
+            <h2
+                class="serif text-3xl md:text-5xl mb-16 md:mb-24 text-center text-white"
+                data-i18n="exp-title">Professional Timeline</h2>
+
+            <div class="space-y-6 md:space-y-8 flex flex-col items-center">
+                <!-- 2025 -->
+                <div class="exp-card" data-aos="fade-up">
+                    <div
+                        class="flex flex-col md:flex-row md:justify-between items-start mb-2">
+                        <h4 class="exp-ship-name">M/V Crown Iris – Universe
+                            Cruises LTD</h4>
+                        <span class="exp-dates">19.03.2025 – 17.10.2025</span>
+                    </div>
+                    <p class="exp-role">Shop Assistant (Completed Contract)
+                        ✔</p>
+                    <p class="exp-desc" data-i18n="job-2025">Inventory
+                        management, retail service, and guest interaction.
+                        Successfully completed the contract.</p>
+                </div>
+
+                <!-- Oct 2024 -->
+                <div class="exp-card" data-aos="fade-up">
+                    <div
+                        class="flex flex-col md:flex-row md:justify-between items-start mb-2">
+                        <h4 class="exp-ship-name">M/V Crown Iris – Universe
+                            Cruises LTD</h4>
+                        <span class="exp-dates">03.10.2024 – 17.12.2024</span>
+                    </div>
+                    <p class="exp-role">Shop Attendant — Rhodes → Larnaca</p>
+                    <p class="exp-desc" data-i18n="job-2024-2">Ensuring customer
+                        service and merchandise management for cruise
+                        guests.</p>
+                </div>
+
+                <!-- Aug 2024 KAMAR -->
+                <div class="exp-card" data-aos="fade-up"
+                    style="border-left-color: var(--yacht-gold);">
+                    <div
+                        class="flex flex-col md:flex-row md:justify-between items-start mb-2">
+                        <h4 class="exp-ship-name">M/Y KAMAR – Orient Marine</h4>
+                        <span class="exp-dates">11.08.2024 – 21.09.2024</span>
+                    </div>
+                    <p class="exp-role" data-i18n="job-kamar-t">Yacht Stewardess
+                        — Göcek, Turkey</p>
+                    <p class="exp-desc" data-i18n="job-kamar">Interior
+                        management, guest service, table setting, housekeeping,
+                        and laundry care. High attention to detail.</p>
+                </div>
+
+                <!-- March 2024 Practice -->
+                <div class="exp-card" data-aos="fade-up">
+                    <div
+                        class="flex flex-col md:flex-row md:justify-between items-start mb-2">
+                        <h4 class="exp-ship-name">M/Y Wind (Private 24m)</h4>
+                        <span class="exp-dates">March 2024</span>
+                    </div>
+                    <p class="exp-role" data-i18n="job-wind-t">Solo Stewardess —
+                        Practice</p>
+                    <p class="exp-desc" data-i18n="job-wind">Providing table
+                        service and decoration. Interior maintenance of owner
+                        cabins, salon, and laundry.</p>
+                </div>
+
+                <!-- 2023 -->
+                <div class="exp-card" data-aos="fade-up">
+                    <div
+                        class="flex flex-col md:flex-row md:justify-between items-start mb-2">
+                        <h4 class="exp-ship-name">M/V Crown Iris (Mano
+                            Maritime)</h4>
+                        <span class="exp-dates">14.03.2023 – 20.10.2023</span>
+                    </div>
+                    <p class="exp-role">Shop Attendant — Haifa → Athens</p>
+                    <p class="exp-desc" data-i18n="job-2023">Retail operations,
+                        guest service, and stock management during cruise
+                        voyages.</p>
+                </div>
+
+                <!-- 2022 Cabin -->
+                <div class="exp-card" data-aos="fade-up">
+                    <div
+                        class="flex flex-col md:flex-row md:justify-between items-start mb-2">
+                        <h4 class="exp-ship-name">M/V Crown Iris (Mano
+                            Maritime)</h4>
+                        <span class="exp-dates">May 2022 – Nov 2022</span>
+                    </div>
+                    <p class="exp-role">Cabin Stewardess</p>
+                    <p class="exp-desc" data-i18n="job-2022">Maintaining
+                        cleanliness and hygiene standards in cabins, ensuring
+                        passenger comfort.</p>
+                </div>
+
+                <!-- 2018 - 2022 Odessa -->
+                <div class="exp-card opacity-80" data-aos="fade-up">
+                    <div
+                        class="flex flex-col md:flex-row md:justify-between items-start mb-2">
+                        <h4 class="exp-ship-name">Maristella Marine Residents |
+                            Mantra Club</h4>
+                        <span class="exp-dates">2018 – 2022</span>
+                    </div>
+                    <p class="exp-role">Administrator — Odessa, Ukraine</p>
+                    <p class="exp-desc" data-i18n="job-odessa">Managing guest
+                        bookings, coordinating services, and ensuring
+                        hospitality operations.</p>
+                </div>
+
+                <!-- Education -->
+                <div
+                    class="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-12 w-full max-w-5xl">
+                    <div
+                        class="p-6 md:p-8 bg-[#0f1a2a] rounded-xl border border-white/5">
+                        <h4
+                            class="serif text-lg md:text-xl text-white mb-2">Maximus
+                            Academy</h4>
+                        <p
+                            class="text-gold text-[9px] md:text-[10px] font-bold uppercase mb-4 tracking-widest">Solo
+                            Stewardess Training</p>
+                        <p class="text-xs text-slate-500 italic">Professional
+                            training in yacht hospitality. Cert № TN190324.</p>
+                    </div>
+                    <div
+                        class="p-6 md:p-8 bg-[#0f1a2a] rounded-xl border border-white/5">
+                        <h4
+                            class="serif text-lg md:text-xl text-white mb-2">BARBOSS
+                            Odessa</h4>
+                        <p
+                            class="text-gold text-[9px] md:text-[10px] font-bold uppercase mb-4 tracking-widest">Bartender
+                            Training (2011)</p>
+                        <p class="text-xs text-slate-500 italic">Beverage
+                            service and hospitality culture.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- GALLERY -->
+        <section id="gallery"
+            class="py-16 md:py-24 bg-[#0a1421] text-white overflow-hidden">
+            <div
+                class="max-w-7xl mx-auto px-4 md:px-6 mb-12 flex flex-col items-center text-center">
+                <h2 class="serif text-3xl md:text-5xl mb-4 text-white"
+                    data-i18n="gal-title">Interior Portfolio</h2>
+                <div class="h-1 w-12 bg-gold mx-auto"></div>
+            </div>
+
+            <div class="gallery-wrapper px-4 md:px-6 flex justify-center">
+                <div class="swiper gallerySwiper w-full max-w-5xl">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide flex justify-center">
+                            <img src="./img/work_1.jpg" alt="Interior"
+                                class="w-full h-64 md:h-80 object-cover rounded-lg shadow-xl"
+                                onerror="this.src='https://images.unsplash.com/photo-1599940824399-b87987cb96da?auto=format&fit=crop&q=80'">
+                        </div>
+                        <div class="swiper-slide flex justify-center">
+                            <img src="./img/work_2.jpg" alt="Service"
+                                class="w-full h-64 md:h-80 object-cover rounded-lg shadow-xl"
+                                onerror="this.src='https://images.unsplash.com/photo-1562285810-72439130768e?auto=format&fit=crop&q=80'">
+                        </div>
+                        <div class="swiper-slide flex justify-center">
+                            <img src="./img/work_3.jpg" alt="Dining"
+                                class="w-full h-64 md:h-80 object-cover rounded-lg shadow-xl"
+                                onerror="this.src='https://images.unsplash.com/photo-1544161513-0179fe746fd5?auto=format&fit=crop&q=80'">
+                        </div>
+                        <div class="swiper-slide flex justify-center">
+                            <img src="./img/work_4.jpg" alt="Detail"
+                                class="w-full h-64 md:h-80 object-cover rounded-lg shadow-xl"
+                                onerror="this.src='https://images.unsplash.com/photo-1621275471769-e6aa344546d5?auto=format&fit=crop&q=80'">
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer id="contact"
+            class="py-16 md:py-24 bg-[#060d17] text-white text-center border-t border-gold/10">
+            <div class="max-w-4xl mx-auto px-4 md:px-6">
+                <div class="text-center mb-12 md:mb-16" data-aos="fade-up">
+                    <p
+                        class="text-gold uppercase tracking-[0.3em] md:tracking-[0.4em] text-[9px] md:text-[10px] font-bold mb-4">Reference
+                        Available</p>
+                    <p class="serif text-xl md:text-2xl mb-2 italic">Viktoria
+                        Kapitanchuk</p>
+                    <p class="text-xs md:text-sm text-slate-500">Head Teacher @
+                        Maximus Academy</p>
+                    <a href="tel:+306999338182"
+                        class="text-gold font-bold text-xs md:text-sm block mt-4 hover:underline transition">+30
+                        699 933 81 82</a>
+                </div>
+
+                <h2 class="serif text-4xl md:text-5xl mb-12 text-white"
+                    data-aos="fade-up" data-i18n="cont-title">Connect</h2>
+
+                <div class="flex justify-center gap-6 md:gap-10 mb-16 md:mb-20"
+                    data-aos="zoom-in">
+                    <a href="https://wa.me/380932517703" target="_blank"
+                        class="social-link">
+                        <i
+                            class="fa-brands fa-whatsapp text-xl md:text-2xl"></i>
+                    </a>
+                    <a href="https://t.me/PoladichOksana" target="_blank"
+                        class="social-link">
+                        <i
+                            class="fa-brands fa-telegram text-xl md:text-2xl"></i>
+                    </a>
+                    <a href="mailto:miss.lomaka@gmail.com" class="social-link">
+                        <i class="fa-solid fa-envelope text-xl md:text-2xl"></i>
+                    </a>
+                </div>
+
+                <p
+                    class="text-slate-600 text-[8px] md:text-[10px] uppercase tracking-[0.2em] md:tracking-[0.4em] font-medium px-4 leading-relaxed">
+                    © 2026 Oksana Poladych | Yacht & Cruise Hospitality
                 </p>
-                
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-8 md:gap-x-12 gap-y-6 mb-10 md:mb-12 border-t border-white/10 pt-8 text-xs md:text-sm">
-                    <div class="flex flex-col items-center lg:items-start">
-                        <span class="block text-[8px] md:text-[9px] uppercase text-slate-500 font-bold mb-1" data-i18n="label-dob">DOB</span>
-                        <span class="font-semibold text-white">30.06.1985</span>
-                    </div>
-                    <div class="flex flex-col items-center lg:items-start">
-                        <span class="block text-[8px] md:text-[9px] uppercase text-slate-500 font-bold mb-1" data-i18n="label-lang">Languages</span>
-                        <span class="font-semibold uppercase text-white">RU, EN</span>
-                    </div>
-                    <div class="flex flex-col items-center lg:items-start">
-                        <span class="block text-[8px] md:text-[9px] uppercase text-slate-500 font-bold mb-1" data-i18n="label-pass">Passport EU</span>
-                        <span class="font-semibold text-white">F*3****8</span>
-                    </div>
-                    <div class="flex flex-col items-center lg:items-start">
-                        <span class="block text-[8px] md:text-[9px] uppercase text-slate-500 font-bold mb-1" data-i18n="label-loc">Location</span>
-                        <span class="font-semibold text-white uppercase">Odessa, Ukraine</span>
-                    </div>
-                    <div class="sm:col-span-2 border-t border-white/5 pt-4 flex flex-col items-center lg:items-start">
-                        <span class="block text-[8px] md:text-[9px] uppercase text-slate-500 font-bold mb-2">Maritime Docs</span>
-                        <div class="flex flex-wrap gap-4 md:gap-8 justify-center lg:justify-start">
-                            <span class="text-white text-xs md:text-sm"><strong class="text-gold">SB:</strong> A*0****0</span>
-                            <span class="text-white text-xs md:text-sm"><strong class="text-gold">STCW:</strong> 14****8</span>
-                        </div>
-                    </div>
-                    <div class="sm:col-span-2 flex flex-col items-center lg:items-start">
-                        <span class="block text-[8px] md:text-[9px] uppercase text-slate-500 font-bold mb-1" data-i18n="label-origin">Birth Place</span>
-                        <span class="text-white text-xs md:text-sm italic">Kalanchak, Kherson region</span>
-                    </div>
-                </div>
-                
-                <div class="flex flex-wrap gap-2 justify-center lg:justify-start">
-                    <span class="px-4 md:px-5 py-1.5 md:py-2 bg-gold/10 text-gold text-[9px] md:text-[10px] font-bold uppercase rounded-full border border-gold/30 tracking-widest" data-i18n="tag-smoke">Non-Smoker</span>
-                    <span class="px-4 md:px-5 py-1.5 md:py-2 bg-gold/10 text-gold text-[9px] md:text-[10px] font-bold uppercase rounded-full border border-gold/30 tracking-widest" data-i18n="tag-tattoo">No Visible Tattoos</span>
-                </div>
             </div>
-        </div>
-    </section>
+        </footer>
 
-    <!-- SERVICES & EXPERTISE -->
-    <section id="services" class="py-16 md:py-24 bg-[#0a1421]">
-        <div class="max-w-7xl mx-auto px-4 md:px-6">
-            <div class="text-center mb-12 md:mb-16" data-aos="fade-up">
-                <h2 class="serif text-3xl md:text-5xl mb-4 text-white" data-i18n="ser-title">Expertise & Services</h2>
-                <div class="h-1 w-12 md:w-16 bg-gold mx-auto"></div>
-                <p class="text-[8px] md:text-[10px] uppercase text-gold/60 mt-4 tracking-widest" data-i18n="hover-hint">Hover cards for details</p>
-            </div>
-            
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-6 justify-items-center">
-                <!-- Hospitality -->
-                <div class="service-card" data-aos="zoom-in">
-                    <div class="service-content">
-                        <i class="fa-solid fa-utensils text-gold text-2xl mb-4"></i>
-                        <h4 class="text-[10px] md:text-[11px] font-bold uppercase text-white tracking-widest" data-i18n="s-1">Hospitality</h4>
-                    </div>
-                    <div class="service-details">
-                        <ul class="service-list space-y-2">
-                            <li data-i18n="s1-1">• Serving Table</li>
-                            <li data-i18n="s1-2">• Table Decoration</li>
-                            <li data-i18n="s1-3">• Customer Service</li>
-                            <li data-i18n="s1-4">• Team Player</li>
-                        </ul>
-                    </div>
-                </div>
+        <!-- SCRIPTS -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-                <!-- Interior -->
-                <div class="service-card" data-aos="zoom-in" data-aos-delay="100">
-                    <div class="service-content">
-                        <i class="fa-solid fa-bed text-gold text-2xl mb-4"></i>
-                        <h4 class="text-[10px] md:text-[11px] font-bold uppercase text-white tracking-widest" data-i18n="s-2">Interior</h4>
-                    </div>
-                    <div class="service-details">
-                        <ul class="service-list space-y-2">
-                            <li data-i18n="s2-1">• Housekeeping</li>
-                            <li data-i18n="s2-2">• Laundry Care</li>
-                            <li data-i18n="s2-3">• Detailing</li>
-                            <li data-i18n="s2-4">• Silver Service</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Guest Focus -->
-                <div class="service-card" data-aos="zoom-in" data-aos-delay="200">
-                    <div class="service-content">
-                        <i class="fa-solid fa-eye text-gold text-2xl mb-4"></i>
-                        <h4 class="text-[10px] md:text-[11px] font-bold uppercase text-white tracking-widest" data-i18n="s-3">Attention</h4>
-                    </div>
-                    <div class="service-details">
-                        <ul class="service-list space-y-2">
-                            <li data-i18n="s3-1">• Anticipate needs</li>
-                            <li data-i18n="s3-2">• Active listening</li>
-                            <li data-i18n="s3-3">• Attentive details</li>
-                            <li data-i18n="s3-4">• VIP standards</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Communication -->
-                <div class="service-card" data-aos="zoom-in" data-aos-delay="300">
-                    <div class="service-content">
-                        <i class="fa-solid fa-comments text-gold text-2xl mb-4"></i>
-                        <h4 class="text-[10px] md:text-[11px] font-bold uppercase text-white tracking-widest" data-i18n="s-4">Comm Skills</h4>
-                    </div>
-                    <div class="service-details">
-                        <ul class="service-list space-y-2">
-                            <li data-i18n="s4-1">• Verbal skills</li>
-                            <li data-i18n="s4-2">• Advanced verbal</li>
-                            <li data-i18n="s4-3">• Interaction</li>
-                            <li data-i18n="s4-4">• Attentiveness</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Attributes -->
-                <div class="service-card" data-aos="zoom-in" data-aos-delay="400">
-                    <div class="service-content">
-                        <i class="fa-solid fa-bolt text-gold text-2xl mb-4"></i>
-                        <h4 class="text-[10px] md:text-[11px] font-bold uppercase text-white tracking-widest" data-i18n="s-5">Attributes</h4>
-                    </div>
-                    <div class="service-details">
-                        <ul class="service-list space-y-2">
-                            <li data-i18n="s5-1">• Stress resist</li>
-                            <li data-i18n="s5-2">• Under pressure</li>
-                            <li data-i18n="s5-3">• High Energy</li>
-                            <li data-i18n="s5-4">• Proactive</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Professional -->
-                <div class="service-card" data-aos="zoom-in" data-aos-delay="500">
-                    <div class="service-content">
-                        <i class="fa-solid fa-medal text-gold text-2xl mb-4"></i>
-                        <h4 class="text-[10px] md:text-[11px] font-bold uppercase text-white tracking-widest" data-i18n="s-6">Professional</h4>
-                    </div>
-                    <div class="service-details">
-                        <ul class="service-list space-y-2">
-                            <li data-i18n="s6-1">• Service Culture</li>
-                            <li data-i18n="s6-2">• Discrete care</li>
-                            <li data-i18n="s6-3">• Standards</li>
-                            <li data-i18n="s6-4">• Integrity</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- TIMELINE -->
-    <section id="experience" class="py-16 md:py-32 px-4 md:px-6 max-w-7xl mx-auto">
-        <h2 class="serif text-3xl md:text-5xl mb-16 md:mb-24 text-center text-white" data-i18n="exp-title">Confirmed Timeline</h2>
-        
-        <div class="space-y-6 md:space-y-8 flex flex-col items-center">
-            <!-- 2025 -->
-            <div class="exp-card" data-aos="fade-up">
-                <div class="flex flex-col md:flex-row md:justify-between items-start mb-2">
-                    <h4 class="exp-ship-name">M/V Crown Iris – Universe Cruises LTD</h4>
-                    <span class="exp-dates">19.03.2025 – 17.10.2025</span>
-                </div>
-                <p class="exp-role">Shop Assistant (Completed Contract) ✔</p>
-                <p class="exp-desc" data-i18n="job-2025">Inventory management, high-end retail service, and personalized guest interaction. Completed full contract with excellence.</p>
-            </div>
-
-            <!-- Oct 2024 -->
-            <div class="exp-card" data-aos="fade-up">
-                <div class="flex flex-col md:flex-row md:justify-between items-start mb-2">
-                    <h4 class="exp-ship-name">M/V Crown Iris – Universe Cruises LTD</h4>
-                    <span class="exp-dates">03.10.2024 – 17.12.2024</span>
-                </div>
-                <p class="exp-role">Shop Attendant — Rhodes → Larnaca</p>
-                <p class="exp-desc" data-i18n="job-2024-2">Ensuring premium customer service and merchandise management for cruise guests.</p>
-            </div>
-
-            <!-- Aug 2024 KAMAR -->
-            <div class="exp-card" data-aos="fade-up" style="border-left-color: var(--yacht-gold);">
-                <div class="flex flex-col md:flex-row md:justify-between items-start mb-2">
-                    <h4 class="exp-ship-name">M/Y KAMAR – Orient Marine</h4>
-                    <span class="exp-dates">11.08.2024 – 21.09.2024</span>
-                </div>
-                <p class="exp-role" data-i18n="job-kamar-t">Yacht Stewardess — Göcek, Turkey</p>
-                <p class="exp-desc" data-i18n="job-kamar">Full interior management, guest silver service, table styling, elite housekeeping, and laundry care. High attention to detail.</p>
-            </div>
-
-            <!-- March 2024 Practice -->
-            <div class="exp-card" data-aos="fade-up">
-                <div class="flex flex-col md:flex-row md:justify-between items-start mb-2">
-                    <h4 class="exp-ship-name">M/Y Wind (Private 24m)</h4>
-                    <span class="exp-dates">March 2024</span>
-                </div>
-                <p class="exp-role" data-i18n="job-wind-t">Solo Stewardess — Practice</p>
-                <p class="exp-desc" data-i18n="job-wind">Providing table service and decoration. Interior maintenance of owner cabins, salon, and laundry. High standard professional practice.</p>
-            </div>
-
-            <!-- 2023 -->
-            <div class="exp-card" data-aos="fade-up">
-                <div class="flex flex-col md:flex-row md:justify-between items-start mb-2">
-                    <h4 class="exp-ship-name">M/V Crown Iris (Mano Maritime)</h4>
-                    <span class="exp-dates">14.03.2023 – 20.10.2023</span>
-                </div>
-                <p class="exp-role">Shop Attendant — Haifa → Athens</p>
-                <p class="exp-desc" data-i18n="job-2023">Retail operations, guest service, and stock management during cruise voyages.</p>
-            </div>
-
-            <!-- 2022 Cabin -->
-            <div class="exp-card" data-aos="fade-up">
-                <div class="flex flex-col md:flex-row md:justify-between items-start mb-2">
-                    <h4 class="exp-ship-name">M/V Crown Iris (Mano Maritime)</h4>
-                    <span class="exp-dates">May 2022 – Nov 2022</span>
-                </div>
-                <p class="exp-role">Cabin Stewardess</p>
-                <p class="exp-desc" data-i18n="job-2022">Maintaining cleanliness and hygiene standards in cabins, ensuring passenger comfort and satisfaction.</p>
-            </div>
-
-            <!-- 2018 - 2022 Odessa -->
-            <div class="exp-card opacity-80" data-aos="fade-up">
-                <div class="flex flex-col md:flex-row md:justify-between items-start mb-2">
-                    <h4 class="exp-ship-name">Maristella Marine Residents | Mantra Club</h4>
-                    <span class="exp-dates">2018 – 2022</span>
-                </div>
-                <p class="exp-role">Administrator — Odessa, Ukraine</p>
-                <p class="exp-desc" data-i18n="job-odessa">Managing guest bookings, coordinating services, and ensuring smooth hospitality operations.</p>
-            </div>
-
-            <!-- Education -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-12 w-full max-w-5xl">
-                <div class="p-6 md:p-8 bg-[#0f1a2a] rounded-xl border border-white/5">
-                    <h4 class="serif text-lg md:text-xl text-white mb-2">Maximus Academy</h4>
-                    <p class="text-gold text-[9px] md:text-[10px] font-bold uppercase mb-4 tracking-widest">Solo Stewardess Training</p>
-                    <p class="text-xs text-slate-500 italic">Professional training in yacht hospitality. Cert № TN190324.</p>
-                </div>
-                <div class="p-6 md:p-8 bg-[#0f1a2a] rounded-xl border border-white/5">
-                    <h4 class="serif text-lg md:text-xl text-white mb-2">BARBOSS Odessa</h4>
-                    <p class="text-gold text-[9px] md:text-[10px] font-bold uppercase mb-4 tracking-widest">Bartender Training (2011)</p>
-                    <p class="text-xs text-slate-500 italic">Beverage service and hospitality culture.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- GALLERY (ПОРТФОЛИО ИНТЕРЬЕРОВ) -->
-    <section id="gallery" class="py-16 md:py-24 bg-[#0a1421] text-white overflow-hidden">
-        <div class="max-w-7xl mx-auto px-4 md:px-6 mb-12 flex flex-col items-center text-center">
-            <h2 class="serif text-3xl md:text-5xl mb-4 text-white" data-i18n="gal-title">Interior Portfolio</h2>
-            <div class="h-1 w-12 bg-gold mx-auto"></div>
-        </div>
-        
-        <div class="gallery-wrapper px-4 md:px-6 flex justify-center">
-            <div class="swiper mySwiper gallery-swiper w-full max-w-5xl">
-                <div class="swiper-wrapper">
-                    <!-- ГАЛЕРЕЯ ФОТО ИНТЕРЬЕРОВ: Замените пути ниже на свои из папки images -->
-                    <div class="swiper-slide flex justify-center">
-                        <img src="./img/work_1.jpg" alt="Interior" class="w-full h-64 md:h-80 object-cover rounded-lg shadow-xl" onerror="this.src='https://images.unsplash.com/photo-1599940824399-b87987cb96da?auto=format&fit=crop&q=80'">
-                    </div>
-                    <div class="swiper-slide flex justify-center">
-                        <img src="./img/work_2.jpg" alt="Service" class="w-full h-64 md:h-80 object-cover rounded-lg shadow-xl" onerror="this.src='https://images.unsplash.com/photo-1562285810-72439130768e?auto=format&fit=crop&q=80'">
-                    </div>
-                    <div class="swiper-slide flex justify-center">
-                        <img src="./img/work_3.jpg" alt="Dining" class="w-full h-64 md:h-80 object-cover rounded-lg shadow-xl" onerror="this.src='https://images.unsplash.com/photo-1544161513-0179fe746fd5?auto=format&fit=crop&q=80'">
-                    </div>
-                    <div class="swiper-slide flex justify-center">
-                        <img src="./img/work_4.jpg" alt="Detail" class="w-full h-64 md:h-80 object-cover rounded-lg shadow-xl" onerror="this.src='https://images.unsplash.com/photo-1621275471769-e6aa344546d5?auto=format&fit=crop&q=80'">
-                    </div>
-                </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-pagination"></div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FOOTER (КОНТАКТЫ) -->
-    <footer id="contact" class="py-16 md:py-24 bg-[#060d17] text-white text-center border-t border-gold/10">
-        <div class="max-w-4xl mx-auto px-4 md:px-6">
-            <div class="text-center mb-12 md:mb-16" data-aos="fade-up">
-                <p class="text-gold uppercase tracking-[0.3em] md:tracking-[0.4em] text-[9px] md:text-[10px] font-bold mb-4">Reference Available</p>
-                <p class="serif text-xl md:text-2xl mb-2 italic">Viktoria Kapitanchuk</p>
-                <p class="text-xs md:text-sm text-slate-500">Head Teacher @ Maximus Academy</p>
-                <!-- НОМЕР ТЕЛЕФОНА: Оставьте здесь свой контактный номер -->
-                <a href="tel:+306999338182" class="text-gold font-bold text-xs md:text-sm block mt-4 hover:underline transition">+30 699 933 81 82</a>
-            </div>
-
-            <h2 class="serif text-4xl md:text-5xl mb-12 text-white" data-aos="fade-up" data-i18n="cont-title">Connect</h2>
-            
-            <div class="flex justify-center gap-6 md:gap-10 mb-16 md:mb-20" data-aos="zoom-in">
-                <!-- ВАШИ ССЫЛКИ НА МЕССЕНДЖЕРЫ: Замените номер/логин в ссылках ниже -->
-                <a href="https://wa.me/380932517703" target="_blank" class="social-link">
-                    <i class="fa-brands fa-whatsapp text-xl md:text-2xl"></i>
-                </a>
-                <a href="https://t.me/PoladichOksana" target="_blank" class="social-link">
-                    <i class="fa-brands fa-telegram text-xl md:text-2xl"></i>
-                </a>
-                <a href="mailto:miss.lomaka@gmail.com" class="social-link">
-                    <i class="fa-solid fa-envelope text-xl md:text-2xl"></i>
-                </a>
-            </div>
-
-            <p class="text-slate-600 text-[8px] md:text-[10px] uppercase tracking-[0.2em] md:tracking-[0.4em] font-medium px-4 leading-relaxed">
-                © 2026 Oksana Poladych | Designed for High-End Hospitality
-            </p>
-        </div>
-    </footer>
-
-    <!-- SCRIPTS -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    
-    <script>
+        <script>
         const langData = {
             en: {
                 "nav-about": "About", "nav-services": "Expertise", "nav-exp": "Timeline", "nav-gallery": "Gallery",
-                "hero-tag": "Elite Yacht & Cruise Hospitality", "hero-role": "Professional Stewardess | Guest Excellence Specialist",
+                "hero-tag": "Yacht & Cruise Hospitality", "hero-role": "Professional Stewardess | Hospitality Specialist",
                 "about-tag": "Profile", "about-title": "About Me",
-                "about-text": "Dedicated Stewardess with a proven track record on luxury cruise lines and private superyachts. I focus on creating a seamless guest experience through impeccable interior care.",
-                "label-dob": "DOB", "label-lang": "Languages", "label-pass": "Passport EU", "label-stcw": "STCW", "label-loc": "Location", "label-origin": "Birth Place",
+                "about-text": "Dedicated Stewardess with a proven track record on cruise lines and private yachts. I focus on creating a comfortable guest experience through attentive interior care.",
+                "label-dob": "DOB", "label-lang": "Languages", "label-pass": "Passport EU", "label-loc": "Location", "label-origin": "Birth Place",
                 "tag-smoke": "Non-Smoker", "tag-tattoo": "No Visible Tattoos",
-                "ser-title": "Expertise & Services", "hover-hint": "Hover cards to see details",
-                "s-1": "Hospitality", "s-2": "Interior", "s-3": "Attention", "s-4": "Comm Skills", "s-5": "Attributes", "s-6": "Professional",
-                "s1-1": "• Serving Table", "s1-2": "• Table Decoration", "s1-3": "• Customer Service", "s1-4": "• Team Player",
+                "ser-title": "Expertise & Services", "hover-hint": "Details",
+                "s-1": "Hospitality", "s-2": "Interior", "s-3": "Attention", "s-4": "Comm Skills", "s-5": "Attributes", "s-6": "Standards",
+                "s1-1": "• Table Service", "s1-2": "• Table Decoration", "s1-3": "• Guest Care", "s1-4": "• Team Collaboration",
                 "s2-1": "• Housekeeping", "s2-2": "• Laundry Care", "s2-3": "• Detailing", "s2-4": "• Silver Service",
-                "s3-1": "• Anticipate needs", "s3-2": "• Active listening", "s3-3": "• Attentive details", "s3-4": "• VIP standards",
-                "s4-1": "• Verbal skills", "s4-2": "• Advanced verbal", "s4-3": "• Interaction", "s4-4": "• Attentiveness",
-                "s5-1": "• Stress resist", "s5-2": "• Under pressure", "s5-3": "• High Energy", "s5-4": "• Proactive",
-                "s6-1": "• Service Culture", "s6-2": "• Discrete care", "s6-3": "• Standards", "s6-4": "• Integrity",
-                "exp-title": "Confirmed Timeline",
-                "job-2025": "Inventory management, high-end retail service, and personalized guest interaction. Completed full contract with excellence.",
-                "job-2024-2": "Ensuring premium customer service and merchandise management for cruise guests.",
+                "s3-1": "• Anticipate needs", "s3-2": "• Active listening", "s3-3": "• Attentive details", "s3-4": "• Standards",
+                "s4-1": "• Verbal skills", "s4-2": "• Professionalism", "s4-3": "• Interaction", "s4-4": "• Etiquette",
+                "s5-1": "• Resilient", "s5-2": "• Reliable", "s5-3": "• Efficient", "s5-4": "• Proactive",
+                "s6-1": "• Work Ethic", "s6-2": "• Discretion", "s6-3": "• Standards", "s6-4": "• Integrity",
+                "exp-title": "Professional Timeline",
+                "job-2025": "Inventory management, retail service, and guest interaction. Successfully completed the contract.",
+                "job-2024-2": "Ensuring customer service and merchandise management for cruise guests.",
                 "job-kamar-t": "Yacht Stewardess — Göcek, Turkey",
-                "job-kamar": "Full interior management, guest silver service, table styling, elite housekeeping, and laundry care. High attention to detail.",
+                "job-kamar": "Interior management, guest service, table setting, housekeeping, and laundry care. Quality focus.",
                 "job-wind-t": "Solo Stewardess — Practice",
-                "job-wind": "Providing table service and decoration. Interior maintenance of owner cabins, salon, and laundry. High standard professional practice.",
+                "job-wind": "Table service and decoration. Maintenance of cabins, salon, and laundry. Professional practice.",
                 "job-2023": "Retail operations, guest service, and stock management during cruise voyages.",
-                "job-2022": "Maintaining cleanliness and hygiene standards in cabins, ensuring passenger comfort and satisfaction.",
-                "job-odessa": "Managing guest bookings, coordinating services, and ensuring smooth hospitality operations.",
+                "job-2022": "Maintaining cleanliness and hygiene standards in cabins, ensuring passenger comfort.",
+                "job-odessa": "Managing guest bookings, coordinating services, and ensuring hospitality operations.",
                 "gal-title": "Interior Portfolio", "cont-title": "Connect"
             },
             ua: {
                 "nav-about": "Профіль", "nav-services": "Експертиза", "nav-exp": "Досвід", "nav-gallery": "Галерея",
-                "hero-tag": "Елітний сервіс: Яхти та Круїзи", "hero-role": "Професійна стюардеса | Спеціаліст із VIP-гостинності",
+                "hero-tag": "Яхти та Круїзи: Гостинність", "hero-role": "Професійна стюардеса | Фахівець із гостинності",
                 "about-tag": "Портрет", "about-title": "Про мене",
-                "about-text": "Досвідчена стюардеса з успішною практикою роботи на люксових круїзних лайнерах та приватних супер'яхтах. Моя мета — забезпечення бездоганного комфорту гостей через винятковий догляд за інтер'єром та дотримання найвищих стандартів преміального сервісу.",
-                "label-dob": "Дата народж.", "label-lang": "Володіння мовами", "label-pass": "Паспорт EU", "label-stcw": "STCW", "label-loc": "Проживання", "label-origin": "Походження",
+                "about-text": "Досвідчена стюардеса з успішною практикою роботи на круїзних лайнерах та приватних яхтах. Моя мета — забезпечення комфорту гостей через уважний догляд за інтер'єром та дотримання стандартів сервісу.",
+                "label-dob": "Дата народж.", "label-lang": "Мови", "label-pass": "Паспорт EU", "label-loc": "Проживання", "label-origin": "Походження",
                 "tag-smoke": "Без шкідливих звичок", "tag-tattoo": "Без видимих татуювань",
-                "ser-title": "Навички та Експертиза", "hover-hint": "Наведіть для перегляду деталей",
-                "s-1": "Сервіс та Гостинність", "s-2": "Догляд за Інтер'єром", "s-3": "Клієнтоорієнтованість", "s-4": "Комунікативність", "s-5": "Особисті Якості", "s-6": "Професійні Стандарти",
-                "s1-1": "• Професійне сервірування", "s1-2": "• Декорування простору", "s1-3": "• Клієнтський сервіс", "s1-4": "• Робота в команді",
-                "s2-1": "• Housekeeping", "s2-2": "• Догляд за гардеробом", "s2-3": "• Виняткова увага до деталей", "s2-4": "• Silver Service",
-                "s3-1": "• Передбачення потреб", "s3-2": "• Активне слухання", "s3-3": "• Висока концентрація", "s3-4": "• VIP стандарти",
-                "s4-1": "• Вербальні навички", "s4-2": "• Ділове спілкування", "s4-3": "• Взаємодія з гостями", "s4-4": "• Етикет",
-                "s5-1": "• Стресостійкість", "s5-2": "• Робота під тиском", "s5-3": "• Висока енергійність", "s5-4": "• Проактивність",
-                "s6-1": "• Культура сервісу", "s6-2": "• Конфіденційність", "s6-3": "• Високі стандарти", "s6-4": "• Професійна етика",
+                "ser-title": "Навички та Експертиза", "hover-hint": "Деталі",
+                "s-1": "Сервіс та Гостинність", "s-2": "Догляд за Інтер'єром", "s-3": "Уважність", "s-4": "Комунікація", "s-5": "Особисті Якості", "s-6": "Професіоналізм",
+                "s1-1": "• Сервірування", "s1-2": "• Декорування простору", "s1-3": "• Турбота про гостей", "s1-4": "• Робота в команді",
+                "s2-1": "• Housekeeping", "s2-2": "• Догляд за гардеробом", "s2-3": "• Увага до деталей", "s2-4": "• Silver Service",
+                "s3-1": "• Передбачення потреб", "s3-2": "• Активне слухання", "s3-3": "• Уважний підхід", "s3-4": "• Стандарти",
+                "s4-1": "• Вербальні навички", "s4-2": "• Професійне спілкування", "s4-3": "• Взаємодія", "s4-4": "• Етикет",
+                "s5-1": "• Стресостійкість", "s5-2": "• Надійність", "s5-3": "• Ефективність", "s5-4": "• Проактивність",
+                "s6-1": "• Культура сервісу", "s6-2": "• Конфіденційність", "s6-3": "• Стандарти", "s6-4": "• Етика",
                 "exp-title": "Професійний шлях",
-                "job-2025": "Управління запасами, люксовий рітейл та індивідуальна взаємодія з гостями. Повний контракт завершено успішно.",
-                "job-2024-2": "Забезпечення преміального обслуговування клієнтів та мерчандайзинг у круїзній подорожі.",
+                "job-2025": "Управління запасами, рітейл та взаємодія з гостями. Повний контракт завершено успішно.",
+                "job-2024-2": "Забезпечення обслуговування клієнтів та мерчандайзинг у круїзній подорожі.",
                 "job-kamar-t": "Стюардеса яхти — Геджек, Туреччина",
-                "job-kamar": "Повне управління інтер'єром за стандартами Silver Service, стилізація простору, елітний клінінг та догляд за гардеробом. Висока концентрація на деталях.",
+                "job-kamar": "Повне управління інтер'єром, стилізація простору, клінінг та догляд за гардеробом. Увага до деталей.",
                 "job-wind-t": "Solo стюардеса — Практика",
-                "job-wind": "Організація сервісу та декорування столу. Підтримка чистоти інтер'єру: гостьові каюти, каюта власника, салон. Робота з делікатними тканинами.",
-                "job-2023": "Продаж товарів класу люкс, обслуговування гостей та контроль складських запасів під час круїзів.",
-                "job-2022": "Забезпечення стандартів чистоти та гігієни у каютах, турбота про максимальний комфорт пасажирів.",
-                "job-odessa": "Управління бронюванням, координація сервісних служб та забезпечення безперебійної життєдіяльності об'єкту.",
+                "job-wind": "Організація сервісу та декорування столу. Підтримка чистоти інтер'єру та професійна практика.",
+                "job-2023": "Обслуговування гостей та контроль складських запасів під час круїзів.",
+                "job-2022": "Забезпечення стандартів чистоти у каютах, турбота про комфорт пасажирів.",
+                "job-odessa": "Управління бронюванням, координація сервісних служб та забезпечення гостинності.",
                 "gal-title": "Портфоліо інтер'єру", "cont-title": "Контакти"
             }
         };
@@ -717,17 +895,16 @@
                 pagination: { el: ".swiper-pagination", clickable: true }
             });
 
-            new Swiper(".mySwiper", {
+            new Swiper(".gallerySwiper", {
                 slidesPerView: 1, spaceBetween: 20, loop: true,
                 autoplay: { delay: 3500, disableOnInteraction: false },
                 breakpoints: {
-                    768: { slidesPerView: 2 },
-                    1024: { slidesPerView: 2 }
+                    768: { slidesPerView: 2 }
                 },
                 navigation: { nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev" },
                 pagination: { el: ".swiper-pagination", clickable: true }
             });
         });
     </script>
-</body>
+    </body>
 </html>
